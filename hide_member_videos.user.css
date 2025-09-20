@@ -1,0 +1,32 @@
+/* ==UserStyle==
+@name           Hide YT Members-Only Videos
+@namespace      what does this thing do
+@version        1.2.1
+@description    Hides YT members-only videos, the member "thank you" shelf, and the members-only video shelf.
+@author         @FCE300
+@license        GPL-3.0
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+    
+    ytd-rich-item-renderer.ytd-rich-grid-renderer:has(.badge-style-type-members-only) {
+        display: none
+    }
+    
+/* backup in case #dismissible blocks undesired elements
+    
+    #scroll-container:has(.badge-style-type-members-only) {
+        display: none
+    }
+    
+*/
+    
+    #dismissible:has(.badge-style-type-members-only) {
+        display: none
+    }
+    
+    #contents > ytd-recognition-shelf-renderer {
+        display: none
+    }
+    
+}
