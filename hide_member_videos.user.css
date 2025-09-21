@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hide YT Members-Only Videos
 @namespace      what does this thing do
-@version        1.2.2
+@version        1.3.2
 @description    Hides YT members-only videos, the member "thank you" shelf, and the members-only video shelf.
 @author         FCE300 on GitHub
 @license        GPL-3.0
@@ -9,11 +9,26 @@
 
 @-moz-document domain("youtube.com") {
     
+    
+/* hides videos in a channel's video tab */
     ytd-rich-item-renderer.ytd-rich-grid-renderer:has(.badge-style-type-members-only) {
         display: none
     }
     
-/* backup in case #dismissible blocks undesired elements
+    
+/* hides videos in the sidebar of a currently-playing video. this shit is spaghetti but what matters is that it works. how WELL it works is a different matter entirely */
+    .yt-lockup-view-model:has(.yt-lockup-metadata-view-model__text-container > div > yt-content-metadata-view-model > div.yt-content-metadata-view-model__metadata-row.yt-content-metadata-view-model__metadata-row--metadata-row-wrap > div:nth-child(2) > yt-badge-view-model > badge-shape > div.yt-badge-shape__text) {
+        display: none
+    }
+    
+    
+/* hides the videos shelf on a channel's homepage tab*/
+    #dismissible:has(.badge-style-type-members-only) {
+        display: none
+    }
+    
+    
+/* backup in case the above code blocks other elements, does not hide the "members-only videos" header text. can't confirm that this backup doesn't block other elements too though
     
     #scroll-container:has(.badge-style-type-members-only) {
         display: none
@@ -21,10 +36,8 @@
     
 */
     
-    #dismissible:has(.badge-style-type-members-only) {
-        display: none
-    }
     
+/* hides the "thank you, channel members" shelf on a channel's homepage tab*/
     #contents > ytd-recognition-shelf-renderer {
         display: none
     }
