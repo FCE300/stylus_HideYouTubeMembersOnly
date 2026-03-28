@@ -8,7 +8,7 @@ It's a browser extension that allows you to use CSS to modify the appearance of 
 
 ## How do I install it
 
-Click on hide_member_videos.user.css in the repo files, then click Raw at the top-right (or alternatively just [click this link](https://github.com/FCE300/stylus_HideYouTubeMembersOnly/raw/refs/heads/main/hide_member_videos.user.css) to be taken straight to it) and Stylus should automatically bring to you a page with an "Install" button on the left
+Click on hide_member_videos.user.css in the repo files, then click Raw at the top-right (or alternatively just [click this link](https://github.com/FCE300/stylus_HideYouTubeMembersOnly/raw/refs/heads/main/hide_member_videos.user.css) to be taken straight to it) and Stylus should automatically bring you to a page with an "Install" button on the left. It should check here for updates on its own
 
 ## Disclaimer
 
