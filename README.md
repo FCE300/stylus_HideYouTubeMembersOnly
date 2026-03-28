@@ -4,7 +4,7 @@ It's some short CSS for Stylus that hides videos locked behind a paywall. Some p
 
 ## What is a Stylus
 
-It's a browser extension that allows you to use CSS to modify the appearance of webpages
+It's a browser extension that allows you to use CSS to modify the appearance of webpages. It's a fork of Stylish, and I recommend it over Stylish because apparently there were data leak and privacy issues or something. This code might still work if you choose to use Stylish though
 
 ## How do I install it
 
